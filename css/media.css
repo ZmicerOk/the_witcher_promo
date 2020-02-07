@@ -1,0 +1,137 @@
+@media screen and (max-width: 650px) {
+    .play {
+        display: none;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .left {
+        flex-basis: 100%;
+        margin-bottom: 8px;
+    }
+
+    .footer-link:first-child {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .menu-button {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+        border: none;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+    .menu-button::before,
+    .menu-button::after {
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        right: 0;
+        position: absolute;
+        transition: transform 0.3s;
+    }
+
+    .menu-button::before {
+        top: -9px;
+    }
+
+    .menu-button::after {
+        top: 9px;
+    }
+
+    .menu-button.active {
+        background-color: #9D2929;
+    }
+
+    .menu-button.active::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-button.active::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .header {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #9D2929;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        /* min-height: 263px; */
+        text-align: center;
+        padding: 40px 0;
+        display: none;
+    }
+
+    .header.active {
+        display: flex;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .social {
+        flex-basis: 100%;
+        order: 1;
+        margin-bottom: 22px;
+    }
+
+    .menu-list {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    .menu__link {
+        display: block;
+        margin: 0;
+    }
+
+    .menu__link:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .main-content {
+        margin-top: 196px;
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 66px;
+    }
+
+    .main-description {
+        margin-bottom: 25px;
+    }
+
+    .swiper-container {
+        max-width: 80%;
+    }
+
+    .series {
+        max-width: 230px;
+    }
+
+    .arrow {
+        right: -32px;
+    }
+
+}
